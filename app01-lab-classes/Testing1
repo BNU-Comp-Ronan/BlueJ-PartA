@@ -1,0 +1,18 @@
+co452Lab.printList();
+Lab class Tuesday 29th September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Bill Watson, student ID: 2201, credits: 10
+Joao Pires, student ID: 2202, credits: 20
+Ronan DeMelo, student ID: 2203, credits: 30
+Number of students: 3
+joao.addCredits(20);
+bill.changeName("Bill Adams");
+co452Lab.printList();
+Lab class Tuesday 29th September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Bill Adams, student ID: 2201, credits: 10
+Joao Pires, student ID: 2202, credits: 40
+Ronan DeMelo, student ID: 2203, credits: 30
+Number of students: 3
