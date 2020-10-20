@@ -15,8 +15,7 @@ public class Ticket
     
     //This add the date of when the ticket was purched.
     private Date datePruchased;
-    
-    /**
+      /**
      * This creats the ticket. When a ticket is created it will
      * ask you need to ass the destination and price of the ticket.
      */
@@ -26,4 +25,22 @@ public class Ticket
         this.price = price;
         datePruchased = new Date();
     }
+    
+    /**
+     * This method returns the Destination of where the ticket will take you.
+     */
+    public String getdestination()
+    {
+        return destination;
+    }
+    
+    /**
+     * This method shows you the price of the ticket.
+     */
+    public int getPrice()
+    {
+        return price;
+    }
+    
+    
 }
