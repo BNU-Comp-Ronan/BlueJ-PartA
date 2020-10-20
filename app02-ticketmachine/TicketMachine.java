@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Ronan Demelo
  */
 public class TicketMachine
 {
@@ -19,17 +19,34 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
+    //get the information of each ticket from the Ticket class
+    private Ticket ticketToAylesbury;
+    private Ticket ticketToAmersham;
+    private Ticket ticketToHighWycombe;
 
+    
     /**
      * Create a machine that issues tickets of the given price.
      */
     public TicketMachine(int cost)
     {
-        price = cost;
         balance = 0;
         total = 0;
+        createTickets();
     }
-
+    
+    /**
+     * This holds the ticket information so it can be printed out
+     * or used to select what ticket you want to buy.
+     */
+    private void createTickets()
+    {
+        ticketToAylesbury = new Ticket("Aylesbury", 220);
+        ticketToAmersham = new Ticket("Amersham" , 300);
+        ticketToHighWycombe = new Ticket("High Wycombe" , 330);
+    }
+    
     /**
      * @Return The price of a ticket.
      */
@@ -92,6 +109,22 @@ public class TicketMachine
                                (price - balance) + " more cents.");
                     
         }
+    }
+    
+    public void printAllTickets()
+    /**
+     * This will print all the tickets and their price that the customers can buy.
+     */
+    {
+        
+        System.out.print("Destination: " + ticketToAylesbury.destination + " ,");
+        System.out.println("Price: " + ticketToAylesbury.price + " pence");
+        
+        System.out.print("Destination: " + ticketToAmersham.destination + " ,");
+        System.out.println("Price: " + ticketToAmersham.price + " pence");
+        
+        System.out.print("Destination: " + ticketToHighWycombe.destination + " ,");
+        System.out.println("Price: " + ticketToHighWycombe.price + " pence");
     }
 
     /**
