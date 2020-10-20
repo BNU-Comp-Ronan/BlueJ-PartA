@@ -24,7 +24,9 @@ public class TicketMachine
     private Ticket ticketToAylesbury;
     private Ticket ticketToAmersham;
     private Ticket ticketToHighWycombe;
-
+    
+    //The ticket that the customer has selected.
+    private String issuedTicket;
     
     /**
      * Create a machine that issues tickets of the given price.
@@ -125,6 +127,32 @@ public class TicketMachine
         
         System.out.print("Destination: " + ticketToHighWycombe.destination + " ,");
         System.out.println("Price: " + ticketToHighWycombe.price + " pence");
+    }
+    
+    /**
+     * This allowes the customer to sellect what ticket they want to buy.
+     */
+    public void destination(String stop)
+    {
+        if (stop == "Aylesbury")
+        {
+            issuedTicket = ticketToAylesbury.destination;
+            price = ticketToAylesbury.price;
+        }
+        else if (stop == "Amersham")
+        {
+            issuedTicket = ticketToAmersham.destination;
+            price = ticketToAmersham.price;
+        }
+        else if (stop == "High Wycombe")
+        {
+            issuedTicket = ticketToHighWycombe.destination;
+            price = ticketToHighWycombe.price;
+        }
+        else
+        {
+            System.out.println("Please select a valid ticket from All Tickets.");
+        }
     }
 
     /**
