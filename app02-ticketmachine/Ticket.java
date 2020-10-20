@@ -42,5 +42,13 @@ public class Ticket
         return price;
     }
     
-    
+    /**
+     * This will print out the ticket Destination, Price, and Date Purchased.
+     */
+    public void print()
+    {
+        System.out.print("Destination: " + destination);
+        System.out.println(" Price: " + price + " pence");
+        System.out.print("Date pruchased: " + datePruchased);
+    }
 }
