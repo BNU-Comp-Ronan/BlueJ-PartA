@@ -28,6 +28,8 @@ public class TicketMachine
     //The ticket that the customer has selected.
     private String issuedTicket;
     
+    
+    
     /**
      * Create a machine that issues tickets of the given price.
      */
