@@ -20,23 +20,20 @@ public class TicketMachine
     // The total amount of money collected by this machine.
     private int total;
     
-    //the amount of money the customer has inserted.
+    //The amount of money the customer has inserted.
     private int amount;
     
-    //get the information of each ticket from the Ticket class
+    //Get the information of each ticket from the Ticket class.
     private Ticket ticketToAylesbury;
     private Ticket ticketToAmersham;
     private Ticket ticketToHighWycombe;
-    
-    //Add when the ticket was purchased.
-    private Ticket datePurchased;
     
     //The ticket that the customer has selected.
     private String issuedTicket;
     
     
     /**
-     * Create a machine that issues tickets of the given price.
+     * Create a machine that issues tickets.
      */
     public TicketMachine()
     {
@@ -83,28 +80,28 @@ public class TicketMachine
         balance = balance + 10;
         
         //Prints out how much balance the user has entered and the total balance.
-        System.out.println("Ammount added: 10 pence");
+        System.out.println("Amount added: 10 pence");
         System.out.println("Current Balance: " + balance);
     }
     
     public void insertTwentyP()
     {
         balance = balance + 20;
-        System.out.println("Ammount added: 20 pence");
+        System.out.println("Amount added: 20 pence");
         System.out.println("Current Balance: " + balance);
     }
     
     public void insertHundredP()
     {
         balance = balance + 100;
-        System.out.println("Ammount added: 100 pence");
+        System.out.println("Amount added: 100 pence");
         System.out.println("Current Balance: " + balance);
     }
     
     public void insertTwoHundredP()
     {
         balance = balance + 200;
-        System.out.println("Ammount added: 200 pence");
+        System.out.println("Amount added: 200 pence");
         System.out.println("Current Balance: " + balance);
     }
     
@@ -121,8 +118,7 @@ public class TicketMachine
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket: " + issuedTicket);
-            System.out.println("# " + price + " pence.");
-            System.out.println("# Date Purchased:" + datePurchased);
+            System.out.println("# " + price + " pence");
             System.out.println("##################");
             System.out.println();
 
@@ -156,7 +152,7 @@ public class TicketMachine
     }
     
     /**
-     * This allowes the customer to sellect what ticket they want to buy.
+     * This alowes the customer to select what ticket they want to buy.
      */
     public void destination(String stop)
     {
