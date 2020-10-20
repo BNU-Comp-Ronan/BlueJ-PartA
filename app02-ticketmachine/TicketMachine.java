@@ -31,7 +31,7 @@ public class TicketMachine
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
         balance = 0;
         total = 0;
@@ -95,8 +95,8 @@ public class TicketMachine
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# Ticket: " + issuedTicket);
+            System.out.println("# " + price + " pence.");
             System.out.println("##################");
             System.out.println();
 
