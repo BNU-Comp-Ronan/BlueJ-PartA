@@ -3,7 +3,7 @@
  * This class hold the course details.
  *
  * @author Ronan DeMelo
- * @version 04/10/2020
+ * @version 26/10/2020
  */
 public class Course
 {
