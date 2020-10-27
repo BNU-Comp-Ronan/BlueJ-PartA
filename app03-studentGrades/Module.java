@@ -32,4 +32,13 @@ public class Module
     {
         percentage = 0;
     }
+    
+    /**
+     * Allows the user to print the module information.
+     */
+    public void printModules()
+    {
+        System.out.println("Title: " + title + " Module Code: " + moduleCode);
+        System.out.println("Percentage: " + modulePercentage);
+    }
 }

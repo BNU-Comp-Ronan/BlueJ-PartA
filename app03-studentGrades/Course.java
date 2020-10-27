@@ -38,9 +38,9 @@ public class Course
         {
             System.out.println("The Course has the maximum amount of Modules.");
         }
-        else if(modules.size() > 4)
+        else
         {
-            System.out.println("Please add more module(s).");
+            modules.add(newModules);
         }
     }
 
