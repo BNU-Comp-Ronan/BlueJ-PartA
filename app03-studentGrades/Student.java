@@ -20,8 +20,17 @@ public class Student
     // The amount of credits for study taken so far
     private int credits;
     
-    // Hold the grades of the student.
-    private int grades;
+    // Hold the grades of the student for each module.
+    private int module1points;
+    private int module2points;
+    private int module3points;
+    private int module4points;
+    
+    // Hold the final mark.
+    private int totalPoints;
+    
+    // Holds what grade the students got
+    private String grades;
     
     // Allows Student to communicate with student class.
     private ArrayList<Course> courses;
@@ -78,14 +87,40 @@ public class Student
     {
         credits += additionalPoints;
     }
+    
+    public void inputgrades(int module1points , int module2points , int module3points , int module4points)
+    {
+        System.out.print(module1points + ", " + module2points + ", " + module3points + ", " + module4points);
+    }
 
     /**
-     * This will calculate and print the students grades.
+     * This will calculate the students grades.
      */
-    public void insertGrades(int grades)
+    public void setGrades()
     {
-        grades = 0;
+        totalPoints = ((module1points + module2points + module3points + module4points) / 4);
+        if(totalPoints <= 40)
+        {
+            grades = "F";
+        }
+        else if((totalPoints <= 49) && (totalPoints >= 41))
+        {
+            grades = "D";
+        }
+        else if((totalPoints >= 59) && (totalPoints >= 50))
+        {
+            grades = "C";
+        }
+        else if((totalPoints >= 69) && (totalPoints >= 60))
+        {
+            grades = "B";
+        }
+        else if((totalPoints >= 100) && (totalPoints >= 70))
+        {
+            grades = "A";
+        }
     }
+    
     
     /**
      * Return the number of credit points this student has accumulated.
@@ -122,29 +157,6 @@ public class Student
      */
     public void printGrades()
     {
-        if(grades <= 40)
-        {
-            System.out.print(name + "'s Grades: F");
-        }
-        else if((grades <= 49) && (grades >= 41))
-        {
-            System.out.print(name + "'s Grades: D");
-        }
-        else if((grades >= 59) && (grades >= 50))
-        {
-            System.out.print(name + "'s Grades: C");
-        }
-        else if((grades >= 69) && (grades >= 60))
-        {
-            System.out.print(name + "'s Grades: B");
-        }
-        else if((grades >= 100) && (grades >= 70))
-        {
-            System.out.print(name + "'s Grades: A");
-        }
-        else
-        {  
-            System.out.print("Please enter a valid grade.");
-        }
+        System.out.print(name + "s " + grades + totalPoints);
     }
 }

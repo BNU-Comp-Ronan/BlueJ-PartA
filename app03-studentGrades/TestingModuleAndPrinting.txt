@@ -1,0 +1,24 @@
+Student studentRonan = new Student("Ronan DeMelo", "2002");
+Course courseGaming = new Course("Game Development", "G400");
+Module moduleC1 = new Module("Programming", "C1", 25);
+Module moduleC2 = new Module("Design", "C2", 25);
+Module moduleC3 = new Module("3D", "C3", 30);
+Module moduleC4 = new Module("Computing", "C4", 20);
+courseGaming.enrolModules(moduleC1);
+courseGaming.enrolModules(moduleC2);
+courseGaming.enrolModules(moduleC3);
+courseGaming.enrolModules(moduleC4);
+courseGaming.enrolModules(moduleC1);
+The Course has the maximum amount of Modules.
+moduleC1.printModules();
+Title: Programming Module Code: C1
+Percentage: 25
+moduleC2.printModules();
+Title: Design Module Code: C2
+Percentage: 25
+moduleC3.printModules();
+Title: 3D Module Code: C3
+Percentage: 30
+moduleC4.printModules();
+Title: Computing Module Code: C4
+Percentage: 20

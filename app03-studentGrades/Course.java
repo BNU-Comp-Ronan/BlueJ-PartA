@@ -44,8 +44,8 @@ public class Course
     {
         module1 = new Module("Programming", "C1", 25);
         module2 = new Module("Design", "C2", 25);
-        module3 = new Module("3D", "C3", 30);
-        module4 = new Module("Computing", "C4", 20);
+        module3 = new Module("3D", "C3", 25);
+        module4 = new Module("Computing", "C4", 25);
     }
     
     /**
@@ -70,10 +70,10 @@ public class Course
     public void printCourseDetails()
     {
         System.out.println("Course Name:" + title + ", Course ID:" + codenumber);
-        System.out.println("Module: " + module1.title + " Module Code: " + module1.moduleCode);
-        System.out.println("Module: " + module2.title + " Module Code: " + module2.moduleCode);
-        System.out.println("Module: " + module3.title + " Module Code: " + module3.moduleCode);
-        System.out.println("Module: " + module4.title + " Module Code: " + module4.moduleCode);
+        System.out.println("Module: " + module1.title + ", Module Code: " + module1.moduleCode);
+        System.out.println("Module: " + module2.title + ", Module Code: " + module2.moduleCode);
+        System.out.println("Module: " + module3.title + ", Module Code: " + module3.moduleCode);
+        System.out.println("Module: " + module4.title + ", Module Code: " + module4.moduleCode);
     }
 
     /**

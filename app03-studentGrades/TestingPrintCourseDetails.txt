@@ -1,0 +1,6 @@
+courseGaming.printCourseDetails();
+Course Name:Game Development, Course ID:G200
+Module: Programming, Module Code: C1
+Module: Design, Module Code: C2
+Module: 3D, Module Code: C3
+Module: Computing, Module Code: C4
