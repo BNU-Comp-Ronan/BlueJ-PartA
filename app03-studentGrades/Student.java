@@ -11,13 +11,19 @@ import java.util.*;
  */
 public class Student
 {
-    // the student's full name
+    // The student's full name
     private String name;
-    // the student ID
+    
+    // The student ID
     private String id;
-    // the amount of credits for study taken so far
+    
+    // The amount of credits for study taken so far
     private int credits;
     
+    // Hold the grades of the student.
+    private int grades;
+    
+    // Allows Student to communicate with student class.
     private ArrayList<Course> courses;
     
     /**
@@ -73,6 +79,13 @@ public class Student
         credits += additionalPoints;
     }
 
+    /**
+     * This will calculate and print the students grades.
+     */
+    public void insertGrades(int grades)
+    {
+        grades = 0;
+    }
     
     /**
      * Return the number of credit points this student has accumulated.
@@ -101,6 +114,37 @@ public class Student
         for(Course coursename : courses)
         {//This code gets the course name and ID from the courses class.
             coursename.print();
+        }
+    }
+    
+    /**
+     * This will print the studenst grades
+     */
+    public void printGrades()
+    {
+        if(grades >= 39)
+        {
+            System.out.print(name + "'s Grades: F");
+        }
+        else if(grades >= 49)
+        {
+            System.out.print(name + "'s Grades: D");
+        }
+        else if(grades >= 59)
+        {
+            System.out.print(name + "'s Grades: C");
+        }
+        else if(grades >= 69)
+        {
+            System.out.print(name + "'s Grades: B");
+        }
+        else if(grades >= 79)
+        {
+            System.out.print(name + "'s Grades: A");
+        }
+        else
+        {  
+            System.out.print("Please enter a valid grade.");
         }
     }
 }

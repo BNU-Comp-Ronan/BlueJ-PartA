@@ -1,14 +1,14 @@
 #BlueJ package file
-dependency1.from=Student
-dependency1.to=Course
+dependency1.from=Course
+dependency1.to=Module
 dependency1.type=UsesDependency
-dependency2.from=Course
-dependency2.to=Module
+dependency2.from=Student
+dependency2.to=Course
 dependency2.type=UsesDependency
-editor.fx.0.height=838
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
+editor.fx.0.height=830
+editor.fx.0.width=780
+editor.fx.0.x=761
+editor.fx.0.y=0
 objectbench.height=104
 objectbench.width=741
 package.divider.horizontal=0.599476439790576

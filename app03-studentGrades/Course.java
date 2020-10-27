@@ -38,7 +38,7 @@ public class Course
     }
     
     /**
-     * Hold the informaton on each module
+     * Hold the informaton on each module.
      */
     private void createModules()
     {
