@@ -8,29 +8,25 @@
  */
 public class Module
 {
-    private String title;
+    public String title;
     
-    private String moduleCode;
+    public String moduleCode;
     
-    private int modulePercentage;
+    public int modulePercentage;
 
     /**
      * Constructor for objects of class Module.
      */
-    public Module(String moduleName, String moduleID)
+    public Module(String moduleName, String moduleID, int percentage)
     {
         moduleName = title;
         
         moduleID = moduleCode;
         
-    }
-    
-    /**
-     * Add what percentage the module is worth to the overall grade.
-     */
-    public void insertModulePercentage(int percentage)
-    {
+        percentage = modulePercentage;
+        
         percentage = 0;
+        
     }
     
     /**
