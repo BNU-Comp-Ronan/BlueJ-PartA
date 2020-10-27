@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * This class hold the course details.
  *
@@ -12,7 +12,9 @@ public class Course
     //The Name of the course
     private String title;
     
-
+    //Allows us to use the data from the Module class.
+    private ArrayList<Module> modules;
+    
     /**
      * Constructor for objects of class Course.
      */
@@ -23,6 +25,23 @@ public class Course
         
         title = courseName;
         
+        modules =  new ArrayList<Module>();
+        
+    }
+    
+    /**
+     * This will allow you to add modules to the course.
+     */
+    public void enrolModules(Module newModules)
+    {
+        if(modules.size() == 4)
+        {
+            System.out.println("The Course has the maximum amount of Modules.");
+        }
+        else if(modules.size() > 4)
+        {
+            System.out.println("Please add more module(s).");
+        }
     }
 
     /**
