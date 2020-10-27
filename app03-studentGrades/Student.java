@@ -122,23 +122,23 @@ public class Student
      */
     public void printGrades()
     {
-        if(grades >= 39)
+        if(grades <= 40)
         {
             System.out.print(name + "'s Grades: F");
         }
-        else if(grades >= 49)
+        else if((grades <= 49) && (grades >= 41))
         {
             System.out.print(name + "'s Grades: D");
         }
-        else if(grades >= 59)
+        else if((grades >= 59) && (grades >= 50))
         {
             System.out.print(name + "'s Grades: C");
         }
-        else if(grades >= 69)
+        else if((grades >= 69) && (grades >= 60))
         {
             System.out.print(name + "'s Grades: B");
         }
-        else if(grades >= 79)
+        else if((grades >= 100) && (grades >= 70))
         {
             System.out.print(name + "'s Grades: A");
         }
