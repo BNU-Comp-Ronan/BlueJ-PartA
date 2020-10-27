@@ -19,11 +19,11 @@ public class Module
      */
     public Module(String moduleName, String moduleID, int percentage)
     {
-        moduleName = title;
+        title = moduleName;
         
-        moduleID = moduleCode;
+        moduleCode = moduleID;
         
-        percentage = modulePercentage;
+        modulePercentage = percentage;
         
         percentage = 0;
         
