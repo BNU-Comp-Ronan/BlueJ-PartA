@@ -61,11 +61,22 @@ public class StockManager
     {
         return 0;
     }
-
+    
     /**
-     * Print details of all the products.
+     * This will print out all the stock.
      */
-    public void printProductDetails()
+    public void printAllProducts()
     {
+        System.out.println();
+        System.out.println("DeMelo's Stock List");
+        System.out.println("===================");
+        System.out.println();
+        
+        for(Product product : stock)
+        {
+            System.out.println(product);
+        }
+        
+        System.out.println();
     }
 }
