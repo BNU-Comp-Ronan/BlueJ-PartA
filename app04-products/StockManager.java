@@ -49,7 +49,7 @@ public class StockManager
         
         if(product != null)
         {
-            product.
+            product.sell(quantity);
         }
     }
     
