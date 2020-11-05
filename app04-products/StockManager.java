@@ -67,16 +67,23 @@ public class StockManager
      */
     public void printAllProducts()
     {
-        System.out.println();
-        System.out.println("DeMelo's Stock List");
-        System.out.println("===================");
-        System.out.println();
+        printHeading();
         
         for(Product product : stock)
         {
             System.out.println(product);
         }
-        
+        System.out.println();
+    }
+    
+    /**
+     * Holds the heading for the print method.
+     */
+    private void printHeading()
+    {
+        System.out.println();
+        System.out.println("DeMelo's Stock List");
+        System.out.println("===================");
         System.out.println();
     }
 }
