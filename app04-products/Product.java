@@ -42,6 +42,15 @@ public class Product
     {
         return name;
     }
+    
+    /**
+     * Sets name of the product.
+     */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    
 
     /**
      * @return The quantity in stock.
