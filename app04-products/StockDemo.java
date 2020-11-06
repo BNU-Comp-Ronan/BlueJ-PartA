@@ -40,21 +40,6 @@ public class StockDemo
     }
     
     /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
-     */
-    public void showDetails(int id)
-    {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            System.out.println(product.toString());
-        }
-    }
-    
-    /**
      * Sell one of the given item.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
