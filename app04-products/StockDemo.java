@@ -28,6 +28,8 @@ public class StockDemo
         manager.addProduct(new Product(106,  "Cheese Puffs"));
         manager.addProduct(new Product(107,  "Milka"));
         manager.addProduct(new Product(108,  "RTX 3090 FE"));
+        manager.addProduct(new Product(109,  "Jaffa Cakes"));
+        manager.addProduct(new Product(110,  "Milk"));
     }
     
     /**
@@ -37,7 +39,6 @@ public class StockDemo
      */
     public void runDemo()
     {
-        // Show details of all of the products.
         manager.printAllProducts();
         
         manager.printAllProducts();
