@@ -55,12 +55,4 @@ public class StockDemo
             showDetails(id);
         }
     }
-    
-    /**
-     * @return The stock manager.
-     */
-    public StockManager getManager()
-    {
-        return manager;
-    }
 }
