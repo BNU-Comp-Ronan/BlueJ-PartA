@@ -1,3 +1,4 @@
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -11,6 +12,9 @@ public class StockDemo
 {
     // The stock manager.
     private StockManager manager;
+    
+    //Creates a rng.
+    private Random generator = new Random();
 
     /**
      * Create a StockManager and populate it with a few
@@ -42,13 +46,17 @@ public class StockDemo
         manager.printAllProducts();
         
         int noProducts = manager.numberProductsInStock();
+        int amount = 0;
+        
         
         System.out.println("Number of products in stock: " + noProducts);
         
         for(int id = 101; id <= 110; id++)
         {
-            manager.delivery(id, 6);
+            amount = generator.nextInt(100);
+            manager.delivery(id, amount);
         }
+        
         manager.delivery(101, 4);
         
         manager.printAllProducts();
