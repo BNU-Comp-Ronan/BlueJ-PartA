@@ -41,6 +41,8 @@ public class StockDemo
     {
         manager.printAllProducts();
         
+        for(
+        
         manager.printAllProducts();
     }
     
