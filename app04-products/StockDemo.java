@@ -17,8 +17,7 @@ public class StockDemo
     private Random generator = new Random();
 
     /**
-     * Create a StockManager and populate it with a few
-     * sample products.
+     * This holds a few demo products to test the stock manager.
      */
     public StockDemo(StockManager manager)
     {
@@ -39,7 +38,7 @@ public class StockDemo
     /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
-     * product is restocked, and then the details are shown again.
+     * product is restocked in random amounts, and then the details are shown again.
      */
     public void runDemo()
     {
@@ -48,18 +47,18 @@ public class StockDemo
         int noProducts = manager.numberProductsInStock();
         int amount = 0;
         
-        
         System.out.println("Number of products in stock: " + noProducts);
         
         for(int id = 101; id <= 110; id++)
         {
-            amount = generator.nextInt(100);
+            amount = generator.nextInt(20);
             manager.delivery(id, amount);
         }
-        
-        manager.delivery(101, 4);
         
         manager.printAllProducts();
     }
     
+    /**
+     * Sells a random number of products.
+     */
 }

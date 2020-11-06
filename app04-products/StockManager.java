@@ -4,9 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
- * Modified by Ronan DeMelo
+ * @author Ronan DeMelo
+ * @version (06/11/2020)
  */
 public class StockManager
 {
