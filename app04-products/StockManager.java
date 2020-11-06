@@ -88,7 +88,7 @@ public class StockManager
      * @param id The ID of the product.
      * @return The quantity of the given product in stock.
      */
-    public int numberProductsInStock(int id)
+    public int numberProductsInStock()
     {
         return stock.size();
     }

@@ -41,7 +41,9 @@ public class StockDemo
     {
         manager.printAllProducts();
         
-        for(
+        System.out.println("Number of products in stock: " + 
+            manager.numberProductsInStock());
+        manager.delivery(101, 4);
         
         manager.printAllProducts();
     }
