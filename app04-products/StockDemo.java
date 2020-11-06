@@ -39,20 +39,4 @@ public class StockDemo
         manager.printAllProducts();
     }
     
-    /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
-     */
-    public void sellProduct(int id)
-    {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            showDetails(id);
-            product.sell(5);
-            showDetails(id);
-        }
-    }
 }
