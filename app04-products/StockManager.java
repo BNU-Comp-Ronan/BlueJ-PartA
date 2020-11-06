@@ -114,7 +114,7 @@ public class StockManager
      */
     public void printDetails(int id)
     {
-        Product product = getProduct(id);
+        Product product = findProduct(id);
         
         if(product != null) 
         {
