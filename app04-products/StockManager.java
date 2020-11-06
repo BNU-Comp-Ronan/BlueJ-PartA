@@ -51,7 +51,7 @@ public class StockManager
     }
     
     /**
-     * sells a given amount of products.
+     * Sells a given amount of products.
      */
     public void sellProduct(int id, int quantity)
     {

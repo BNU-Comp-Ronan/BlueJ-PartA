@@ -15,7 +15,8 @@ public class StockDemo
     
     //Creates a rng.
     private Random generator = new Random();
-
+    
+    private int amount = 0;
     /**
      * This holds a few demo products to test the stock manager.
      */
@@ -45,10 +46,29 @@ public class StockDemo
         manager.printAllProducts();
         
         int noProducts = manager.numberProductsInStock();
-        int amount = 0;
         
         System.out.println("Number of products in stock: " + noProducts);
         
+        demoDelivery();
+        demoSellProducts();
+    }
+    
+    /**
+     * Sells a random number of products.
+     */
+    private void demoSellProducts()
+    {
+        for(int id = 101; id <= 110; id++)
+        {
+            amount = generator.nextInt(20);
+            manager.sellProduct(id, amount);
+        }
+        
+        manager.printAllProducts();
+    }
+    
+    private void demoDelivery()
+    {
         for(int id = 101; id <= 110; id++)
         {
             amount = generator.nextInt(20);
@@ -57,8 +77,4 @@ public class StockDemo
         
         manager.printAllProducts();
     }
-    
-    /**
-     * Sells a random number of products.
-     */
 }
