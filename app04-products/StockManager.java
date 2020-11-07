@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 /**
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
@@ -46,6 +45,22 @@ public class StockManager
     }
     
     /**
+     * Lets you delete a product.
+     */
+    public void removeProduct(int id)
+    {
+       Product product = findProduct(id);
+        if (product != null)
+        {
+            product.removeProduct();
+        }
+        else
+        {
+            printInvalidID();
+        } 
+    }
+    
+    /**
      * Prints out if the id is invalid.
      */
     private void printInvalidID()
@@ -68,7 +83,6 @@ public class StockManager
             }
         }
     }
-    
     
     /**
      * Receive a delivery of a particular product.

@@ -52,6 +52,16 @@ public class Product
     }
     
     /**
+     * Removes products.
+     */
+    public void removeProduct()
+    {
+        name = null;
+        quantity = 0;
+        id = 0;
+    }
+    
+    /**
      * @return The quantity in stock.
      */
     public int getQuantity()
