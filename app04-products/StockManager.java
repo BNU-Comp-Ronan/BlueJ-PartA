@@ -30,6 +30,23 @@ public class StockManager
     }
     
     /**
+     * Finds a product using only part of the product name.
+     */
+    public void printName(String findName)
+    {
+        printHeading();
+        System.out.println("Products Names with: '" + findName + "':");
+        for (Product product : stock)
+        {
+            if(product.getName().contains(findName))
+            {
+                System.out.println(product);
+            }
+        }
+    }
+    
+    
+    /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
      * @param id The ID of the product.
@@ -50,7 +67,6 @@ public class StockManager
         }
     }
 
-    
     /**
      * Sells a given amount of products.
      */
