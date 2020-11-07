@@ -47,7 +47,7 @@ public class StockDemo
         
         int noProducts = manager.numberProductsInStock();
         
-        System.out.println("Number of products in stock: " + noProducts);
+        System.out.println("Number of products in stock: " + noProducts + "\n");
         
         demoDelivery();
         demoSellProducts();
@@ -58,17 +58,31 @@ public class StockDemo
      */
     private void demoSellProducts()
     {
+        printSelling();
+        
         for(int id = 101; id <= 110; id++)
         {
             amount = generator.nextInt(20);
             manager.sellProduct(id, amount);
         }
-        
+       
         manager.printAllProducts();
     }
     
+    private void printSelling()
+    {
+        System.out.println("--------------------");
+        System.out.println("Selling Products");
+        System.out.println("--------------------");
+    }
+    
+    /**
+     * Delivers a random number of products.
+     */
     private void demoDelivery()
     {
+        printDelivery();
+        
         for(int id = 101; id <= 110; id++)
         {
             amount = generator.nextInt(20);
@@ -76,5 +90,12 @@ public class StockDemo
         }
         
         manager.printAllProducts();
+    }
+    
+    private void printDelivery()
+    {
+        System.out.println("--------------------");
+        System.out.println("Delivering Products");
+        System.out.println("--------------------");
     }
 }

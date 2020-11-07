@@ -49,6 +49,7 @@ public class StockManager
             System.out.println("Cannot find product id: " + id + "\n");
         }
     }
+
     
     /**
      * Sells a given amount of products.
@@ -112,6 +113,7 @@ public class StockManager
     private void printHeading()
     {
         System.out.println();
+        System.out.println("===================");
         System.out.println("DeMelo's Stock List");
         System.out.println("===================");
         System.out.println();
