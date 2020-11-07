@@ -1,4 +1,4 @@
-/**
+ /**
  * Model some details of a product sold by a company.
  * 
  * @author David J. Barnes and Michael Kölling.
@@ -79,6 +79,8 @@ public class Product
         if(amount > 0) 
         {
             quantity += amount;
+            
+            System.out.println("Delivered " + amount + " " + name);
         }
         else 
         {
@@ -96,11 +98,15 @@ public class Product
         if(quantity >= amount) 
         {
             quantity-= amount;
+            
+            System.out.println("Sold " + amount + " " + name);
         }
         else 
         {
             System.out.println(
-                "Attempt to sell an out of stock item: " + name);
+                "Attempt to sell an out of stock item: " + name + ". In Stock: "
+                    + quantity + ". Selling : " + amount + ".");
         }
     }
+    
 }
