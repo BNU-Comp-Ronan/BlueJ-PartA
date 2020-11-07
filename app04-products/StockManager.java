@@ -134,6 +134,9 @@ public class StockManager
         }
     }
     
+    /**
+     * Prints out what items are low on stock.
+     */
     public void printLowStock()
     {
         for(Product product : stock)
