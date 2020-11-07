@@ -51,7 +51,6 @@ public class Product
         this.name = name;
     }
     
-
     /**
      * @return The quantity in stock.
      */
@@ -108,5 +107,4 @@ public class Product
                     + quantity + ". Selling : " + amount + ".");
         }
     }
-    
 }

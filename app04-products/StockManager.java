@@ -30,6 +30,30 @@ public class StockManager
     }
     
     /**
+     * Lets the user rename a product using the ID.
+     */
+    public void renameProduct(int id, String name)
+    {
+        Product product = findProduct(id);
+        if (product != null)
+        {
+            product.setName(name);
+        }
+        else
+        {
+            printInvalidID();
+        }
+    }
+    
+    /**
+     * Prints out if the id is invalid.
+     */
+    private void printInvalidID()
+    {
+        System.out.println("The id you have entered is invalid.");
+    }
+    
+    /**
      * Finds a product using only part of the product name.
      */
     public void printName(String findName)
