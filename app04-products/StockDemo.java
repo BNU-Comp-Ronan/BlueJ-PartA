@@ -51,6 +51,7 @@ public class StockDemo
         
         demoDelivery();
         demoSellProducts();
+        manager.printLowStock();
     }
     
     /**

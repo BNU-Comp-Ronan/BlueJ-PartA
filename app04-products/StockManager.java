@@ -133,4 +133,16 @@ public class StockManager
             System.out.println(product.toString());
         }
     }
+    
+    public void printLowStock()
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() < 5)
+            {
+                System.out.println("This Product is low on stock " + product.toString());
+            }
+        }
+        System.out.println();
+    }
 }
