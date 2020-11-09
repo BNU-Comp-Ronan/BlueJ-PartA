@@ -1,0 +1,101 @@
+StockManager manager = new StockManager();
+StockDemo stockDemo = new StockDemo(manager);
+stockDemo.runDemo();
+
+===================
+DeMelo's Stock List
+===================
+
+101: Cookies stock level: 0
+102: Poptart stock level: 0
+103: Walkers stock level: 0
+104: Pringles stock level: 0
+105: Rocky Road stock level: 0
+106: Cheese Puffs stock level: 0
+107: Milka stock level: 0
+108: RTX 3090 FE stock level: 0
+109: Jaffa Cakes stock level: 0
+110: Milk stock level: 0
+
+Number of products in stock: 10
+
+--------------------
+Delivering Products
+--------------------
+Delivered 1 Cookies
+Delivered 11 Poptart
+Delivered 12 Walkers
+Delivered 16 Pringles
+Delivered 11 Rocky Road
+Delivered 17 Cheese Puffs
+Delivered 5 Milka
+Delivered 9 RTX 3090 FE
+Delivered 6 Jaffa Cakes
+Delivered 10 Milk
+
+===================
+DeMelo's Stock List
+===================
+
+101: Cookies stock level: 1
+102: Poptart stock level: 11
+103: Walkers stock level: 12
+104: Pringles stock level: 16
+105: Rocky Road stock level: 11
+106: Cheese Puffs stock level: 17
+107: Milka stock level: 5
+108: RTX 3090 FE stock level: 9
+109: Jaffa Cakes stock level: 6
+110: Milk stock level: 10
+
+--------------------
+Selling Products
+--------------------
+Attempt to sell an out of stock item: Cookies. In Stock: 1. Selling : 9.
+Sold 5 Poptart
+Attempt to sell an out of stock item: Walkers. In Stock: 12. Selling : 13.
+Sold 1 Pringles
+Sold 2 Rocky Road
+Sold 1 Cheese Puffs
+Attempt to sell an out of stock item: Milka. In Stock: 5. Selling : 9.
+Attempt to sell an out of stock item: RTX 3090 FE. In Stock: 9. Selling : 15.
+Sold 6 Jaffa Cakes
+Attempt to sell an out of stock item: Milk. In Stock: 10. Selling : 11.
+
+===================
+DeMelo's Stock List
+===================
+
+101: Cookies stock level: 1
+102: Poptart stock level: 6
+103: Walkers stock level: 12
+104: Pringles stock level: 15
+105: Rocky Road stock level: 9
+106: Cheese Puffs stock level: 16
+107: Milka stock level: 5
+108: RTX 3090 FE stock level: 9
+109: Jaffa Cakes stock level: 0
+110: Milk stock level: 10
+
+This Product is low on stock 101: Cookies stock level: 1
+This Product is low on stock 109: Jaffa Cakes stock level: 0
+
+manager.renameProduct(102, "Coke");
+manager.removeProduct(101);
+manager.printAllProducts();
+
+===================
+DeMelo's Stock List
+===================
+
+0: null stock level: 0
+102: Coke stock level: 6
+103: Walkers stock level: 12
+104: Pringles stock level: 15
+105: Rocky Road stock level: 9
+106: Cheese Puffs stock level: 16
+107: Milka stock level: 5
+108: RTX 3090 FE stock level: 9
+109: Jaffa Cakes stock level: 0
+110: Milk stock level: 10
+
