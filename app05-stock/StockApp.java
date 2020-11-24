@@ -25,15 +25,6 @@ public class StockApp
      */
     public void run()
     {
-        printHeading();
-        getMenuChoice();
-    }
-    
-    /**
-     * 
-     */
-    public void getMenuChoice()
-    {
         boolean finished = false;
         
         while(!finished)
@@ -45,8 +36,7 @@ public class StockApp
             finished = true;
         }
     }
-    
-   
+       
     /**
      * Print out a menu of operation choices
      */
@@ -67,7 +57,7 @@ public class StockApp
     {
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
-        System.out.println("    App05: by Student Name");
+        System.out.println("    App05: by Ronan DeMelo");
         System.out.println("******************************");
     }
 }
