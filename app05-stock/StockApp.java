@@ -58,7 +58,16 @@ public class StockApp
      */
     private void addProduct(Product item)
     {
+        System.out.println("\nAdding a new product");
+        System.out.println("Enter the product name");
+        String name = input.getCommand();
         
+        System.out.println("Enter a product ID");
+        String value = input.getCommand();
+        
+        int id = Integer.parseInt(value);
+        
+        Product product = new Product(id, name);
     }
 
     /**
