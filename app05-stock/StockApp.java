@@ -56,7 +56,7 @@ public class StockApp
     /**
      * 
      */
-    private void addProduct(Product item)
+    private void addProduct()
     {
         System.out.println("\nAdding a new product");
         System.out.println("Enter the product name");
@@ -75,8 +75,14 @@ public class StockApp
     /**
      * 
      */
-    private void removeProduct(int id)
+    private void removeProduct()
     {
+        System.out.println("\nRemoving a product");
+        System.out.println("Enter a product ID");
+        String value = input.getCommand();
+        
+        int id = Integer.parseInt(value);
+        
         manager.removeProduct(id);
     }
 
@@ -95,11 +101,11 @@ public class StockApp
     {
         if(choice.equals("ADD"))
         {
-            
+            addProduct();
         }
         else if(choice.equals("REMOVE"))
         {
-            
+            removeProduct();
         }
         else if(choice.equals("PRINTALL"))
         {
