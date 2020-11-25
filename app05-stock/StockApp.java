@@ -54,7 +54,7 @@ public class StockApp
     }
 
     /**
-     * 
+     * This code allows the user to add a product by using the UI.
      */
     private void addProduct()
     {
@@ -73,7 +73,7 @@ public class StockApp
     }
 
     /**
-     * 
+     * This code allows the user to remove a product by using the UI.
      */
     private void removeProduct()
     {
@@ -87,11 +87,19 @@ public class StockApp
     }
 
     /**
-     * 
+     * This code allows the user to print all products by using the UI.
      */
     private void printProducts()
     {
         manager.printAllProducts();
+    }
+    
+    /**
+     * This code allows the user to deliver products by using the UI.
+     */
+    private void deliverProducts()
+    {
+        
     }
 
     /**
