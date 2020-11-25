@@ -52,6 +52,14 @@ public class StockApp
             }
         }
     }
+    
+    private int enterID()
+    {
+        System.out.println("Enter a product ID");
+        String value = input.getCommand();
+        int id = Integer.parseInt(value);
+        return id;
+    }
 
     /**
      * This code allows the user to add a product by using the UI.
@@ -62,10 +70,8 @@ public class StockApp
         System.out.println("Enter the product name");
         String name = input.getCommand();
         
-        System.out.println("Enter a product ID");
-        String value = input.getCommand();
+        int id = enterID();
         
-        int id = Integer.parseInt(value);
         
         Product product = new Product(id, name);
         
@@ -78,10 +84,7 @@ public class StockApp
     private void removeProduct()
     {
         System.out.println("\nRemoving a product");
-        System.out.println("Enter a product ID");
-        String value = input.getCommand();
-        
-        int id = Integer.parseInt(value);
+        int id = enterID();
         
         manager.removeProduct(id);
     }
@@ -99,7 +102,14 @@ public class StockApp
      */
     private void deliverProducts()
     {
+        System.out.println("\nDelivering Products.");
+        int id = enterID();
         
+        System.out.println("Enter amount");
+        String quantity = input.getCommand();
+        int amount = Integer.parseInt(quantity);
+        
+        manager.delivery(id, amount);
     }
 
     /**
@@ -119,6 +129,10 @@ public class StockApp
         {
             printProducts();
         }
+        else if(choice.equals("DELIVER"))
+        {
+            deliverProducts();
+        }
     }
 
     /**
@@ -130,6 +144,7 @@ public class StockApp
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    PrintAll:   Print all products");
+        System.out.println("    Deliver:    Deliver products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
