@@ -60,6 +60,14 @@ public class StockApp
         int id = Integer.parseInt(value);
         return id;
     }
+    
+    private int enterQuantity()
+    {
+        System.out.println("Enter amount");
+        String quantity = input.getCommand();
+        int amount = Integer.parseInt(quantity);
+        return amount;
+    }
 
     /**
      * This code allows the user to add a product by using the UI.
@@ -105,11 +113,22 @@ public class StockApp
         System.out.println("\nDelivering Products.");
         int id = enterID();
         
-        System.out.println("Enter amount");
-        String quantity = input.getCommand();
-        int amount = Integer.parseInt(quantity);
+        int amount = enterQuantity();
         
         manager.delivery(id, amount);
+    }
+    
+    /**
+     * This code allows user to sell products using the UI.
+     */
+    private void sellProduct()
+    {
+        System.out.println("\nSelling Product.");
+        int id = enterID();
+        
+        int amount = enterQuantity();
+        
+        manager.sellProduct(id, amount);
     }
 
     /**
@@ -133,6 +152,10 @@ public class StockApp
         {
             deliverProducts();
         }
+        else if(choice.equals("SELL"))
+        {
+            sellProduct();
+        }
     }
 
     /**
@@ -145,6 +168,7 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Deliver:    Deliver products");
+        System.out.println("    Sell:       Sell products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
