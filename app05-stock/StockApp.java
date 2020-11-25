@@ -150,6 +150,14 @@ public class StockApp
     {
         manager.printLowStock();
     }
+    
+    /**
+     * Allows the user to restock the product.
+     */
+    private void restock()
+    {
+        manager.restock();
+    }
 
     /**
      * executes the choices the user has inputed
@@ -184,6 +192,10 @@ public class StockApp
         {
             lowStock();
         }
+        else if(choice.equals("RESTOCK"))
+        {
+            restock();
+        }
     }
 
     /**
@@ -199,6 +211,7 @@ public class StockApp
         System.out.println("    Sell:       Sell products");
         System.out.println("    Search:     Finds a product");
         System.out.println("    LowStock:   Prints products that are low on stock");
+        System.out.println("    Restock:    Restocks products low on stock");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
