@@ -130,6 +130,18 @@ public class StockApp
         
         manager.sellProduct(id, amount);
     }
+    
+    /**
+     * Allows the user to find products using the UI.
+     */
+    private void findProduct()
+    {
+        System.out.println("\nSearching Product.");
+        System.out.println("Enter the product name");
+        String name = input.getCommand();
+        
+        manager.printName(name);
+    }
 
     /**
      * executes the choices the user has inputed
@@ -156,6 +168,10 @@ public class StockApp
         {
             sellProduct();
         }
+        else if(choice.equals("SEARCH"))
+        {
+            findProduct();
+        }
     }
 
     /**
@@ -169,6 +185,7 @@ public class StockApp
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Deliver:    Deliver products");
         System.out.println("    Sell:       Sell products");
+        System.out.println("    Search:     Finds a product");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
