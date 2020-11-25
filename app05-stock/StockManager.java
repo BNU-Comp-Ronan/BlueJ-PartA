@@ -202,4 +202,15 @@ public class StockManager
         }
         System.out.println();
     }
+    
+    public void restock()
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() < 5)
+            {
+                product.deliver(10);
+            }
+        }
+    }
 }

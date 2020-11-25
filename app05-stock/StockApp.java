@@ -142,6 +142,14 @@ public class StockApp
         
         manager.printName(name);
     }
+    
+    /**
+     * Allows the user to print low stock items using the UI.
+     */
+    private void lowStock()
+    {
+        manager.printLowStock();
+    }
 
     /**
      * executes the choices the user has inputed
@@ -172,6 +180,10 @@ public class StockApp
         {
             findProduct();
         }
+        else if(choice.equals("LOWSTOCK"))
+        {
+            lowStock();
+        }
     }
 
     /**
@@ -186,6 +198,7 @@ public class StockApp
         System.out.println("    Deliver:    Deliver products");
         System.out.println("    Sell:       Sell products");
         System.out.println("    Search:     Finds a product");
+        System.out.println("    LowStock:   Prints products that are low on stock");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
