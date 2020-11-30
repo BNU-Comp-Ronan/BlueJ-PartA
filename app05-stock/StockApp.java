@@ -80,12 +80,17 @@ public class StockApp
         
         int id = enterID();
         
-        
-        Product product = new Product(id, name);
-        
-        manager.addProduct(product);
-        System.out.println("\nAdded Product");
-        manager.printDetails(id);
+        if(manager.isDuplicate(id))
+        {
+            System.out.println("Duplicate ID");
+        }
+        else
+        {
+            Product product = new Product(id, name);        
+            manager.addProduct(product);
+            System.out.println("\nAdded Product");
+            manager.printDetails(id);
+        }
     }
 
     /**

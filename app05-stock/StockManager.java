@@ -136,6 +136,22 @@ public class StockManager
     }
     
     /**
+     * Checks if the ID intered already exist.
+     */
+    public boolean isDuplicate(int id)
+    {
+        Product product = findProduct(id);
+        if(product == null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    
+    /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
      * match any product, return zero.
