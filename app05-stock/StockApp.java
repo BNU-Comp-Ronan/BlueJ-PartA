@@ -84,6 +84,8 @@ public class StockApp
         Product product = new Product(id, name);
         
         manager.addProduct(product);
+        System.out.println("\nAdded Product");
+        manager.printDetails(id);
     }
 
     /**
@@ -94,6 +96,7 @@ public class StockApp
         System.out.println("\nRemoving a product");
         int id = enterID();
         
+        System.out.println("\nRomoved Product");
         manager.removeProduct(id);
     }
 
@@ -116,6 +119,7 @@ public class StockApp
         int amount = enterQuantity();
         
         manager.delivery(id, amount);
+        System.out.println("\nDelivered Product");
     }
     
     /**
@@ -129,6 +133,7 @@ public class StockApp
         int amount = enterQuantity();
         
         manager.sellProduct(id, amount);
+        System.out.println("\nSold Product");
     }
     
     /**
@@ -195,6 +200,10 @@ public class StockApp
         else if(choice.equals("RESTOCK"))
         {
             restock();
+        }
+        else
+        {
+            System.out.println("Enter Valid Input");
         }
     }
 
