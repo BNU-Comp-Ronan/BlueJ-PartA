@@ -1,0 +1,190 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Samsung Galaxy S10
+Enter a product ID
+> 111
+
+Added Product
+111: Samsung Galaxy S10 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Samsung Galaxy S20
+Enter a product ID
+> 112
+
+Added Product
+112: Samsung Galaxy S20 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Apple iPhone 11
+Enter a product ID
+> 113
+
+Added Product
+113: Apple iPhone 11 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Apple iPhone 12
+Enter a product ID
+> 114
+
+Added Product
+114: Apple iPhone 12 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Motorola G9 Plus
+Enter a product ID
+> 115
+
+Added Product
+115: Motorola G9 Plus stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> Add
+
+Adding a new product
+Enter the product name
+> new Product
+Enter a product ID
+> 103
+Duplicate ID
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> 
+Enter a product ID
+> 116
+
+Added Product
+116:  stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> quit

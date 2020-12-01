@@ -1,0 +1,101 @@
+deliver
+
+Delivering Products.
+Enter a product ID
+> 112
+Enter amount
+> 8
+Delivered 8 Samsung Galaxy S20
+
+Delivered Product
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> deliver
+
+Delivering Products.
+Enter a product ID
+> 112
+Enter amount
+> -4
+Attempt to restock Samsung Galaxy S20 with a non-positive amount: -4
+
+Delivered Product
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> Sell
+
+Selling Product.
+Enter a product ID
+> 112
+Enter amount
+> 2
+Sold 2 Samsung Galaxy S20
+
+Sold Product
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> sell
+
+Selling Product.
+Enter a product ID
+> 112
+Enter amount
+> 10
+Attempt to sell an out of stock item: Samsung Galaxy S20. In Stock: 6. Selling : 10.
+
+Sold Product
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> 

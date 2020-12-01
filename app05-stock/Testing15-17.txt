@@ -1,0 +1,84 @@
+sell
+
+Selling Product.
+Enter a product ID
+> 112
+Enter amount
+> -2
+Sold -2 Samsung Galaxy S20
+
+Sold Product
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> search
+
+Searching Product.
+Enter the product name
+> Samsung
+
+===================
+DeMelo's Stock List
+===================
+
+Products Names with: 'Samsung':
+111: Samsung Galaxy S10 stock level: 0
+112: Samsung Galaxy S20 stock level: 10
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> LowStock
+This Product is low on stock 101: Cookies stock level: 0
+This Product is low on stock 102: Poptart stock level: 0
+This Product is low on stock 103: Walkers stock level: 0
+This Product is low on stock 104: Pringles stock level: 0
+This Product is low on stock 105: Rocky Road stock level: 0
+This Product is low on stock 106: Cheese Puffs stock level: 0
+This Product is low on stock 107: Milka stock level: 0
+This Product is low on stock 108: RTX 3090 FE stock level: 0
+This Product is low on stock 109: Jaffa Cakes stock level: 0
+This Product is low on stock 110: Milk stock level: 0
+This Product is low on stock 111: Samsung Galaxy S10 stock level: 0
+This Product is low on stock 114: Apple iPhone 12 stock level: 0
+This Product is low on stock 115: Motorola G9 Plus stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> quit

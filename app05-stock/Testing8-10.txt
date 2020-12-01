@@ -1,0 +1,83 @@
+remove
+
+Removing a product
+Enter a product ID
+> 113
+
+Romoved Product
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> remove
+
+Removing a product
+Enter a product ID
+> 203
+
+Romoved Product
+The id you have entered is invalid.
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> printall
+
+===================
+DeMelo's Stock List
+===================
+
+101: Cookies stock level: 0
+102: Poptart stock level: 0
+103: Walkers stock level: 0
+104: Pringles stock level: 0
+105: Rocky Road stock level: 0
+106: Cheese Puffs stock level: 0
+107: Milka stock level: 0
+108: RTX 3090 FE stock level: 0
+109: Jaffa Cakes stock level: 0
+110: Milk stock level: 0
+111: Samsung Galaxy S10 stock level: 0
+112: Samsung Galaxy S20 stock level: 0
+0: null stock level: 0
+114: Apple iPhone 12 stock level: 0
+115: Motorola G9 Plus stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Ronan DeMelo
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Deliver:    Deliver products
+    Sell:       Sell products
+    Search:     Finds a product
+    LowStock:   Prints products that are low on stock
+    Restock:    Restocks products low on stock
+    Quit:       Quit the program
+
+> 
